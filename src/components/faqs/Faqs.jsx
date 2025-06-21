@@ -15,7 +15,7 @@ function Faqs(props) {
     const [dataBlock] = useState(
         {
             subheading: 'FAQs',
-            heading: 'Frequently Aksed Questions',
+            heading: 'Frequntly Aksed Questions',
             desc1: 'Below is a list of frequently asked questions and answers from partners and 3D artist',
             desc2:'Please check this FAQ first before contacting us.'
             
