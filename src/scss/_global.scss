@@ -537,6 +537,16 @@ a {
     text-decoration: none;
 }
 
+
+.tf-button {
+    border-bottom: 2px solid #DEC7FF;
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+    &:hover {
+        border-bottom-color: var(--primary-color) ;
+    }
+}
+
 .splitting.animated .char {
     -webkit-animation: fadeInUp 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
     animation: fadeInUp 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;

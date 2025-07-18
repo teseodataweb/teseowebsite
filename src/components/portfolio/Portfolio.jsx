@@ -1,5 +1,6 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Button from '../button/Button';
 
 import img from '../../assets/images/layouts/portfolio.png'
 
@@ -9,60 +10,60 @@ Portfolio.propTypes = {
 
 function Portfolio(props) {
 
-    const {data} = props;
+    const { data } = props;
 
     const [dataBlock] = useState(
         {
             subheading: 'Join NFT Portfolio',
-            heading: 'Become a Cyfonii Player Now',
-            
+            heading: 'Especialistas por industria, no generalistas',
+
         }
     )
     return (
         <section className="portfolio">
-                <div className="shape"></div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="block-text center">
-                                <h6 className="sub-heading"><span>{dataBlock.subheading}</span></h6>
-                                <h3 className="heading pd">{dataBlock.heading}</h3>
-                                    
-                            </div>
+            <div className="shape"></div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="block-text center">
+                            <h6 className="sub-heading"><span>{dataBlock.subheading}</span></h6>
+                            <h3 className="heading pd">{dataBlock.heading}</h3>
+
                         </div>
-                        <div className="col-xl-6 col-md-6">
-                            <div className="portfolio__left">
-                                {
-                                    data.map(idx => (
-                                        <div key={idx.id} className="portfolio-box">
-                                            <div className="step">Step {idx.id}</div>
-                                            <div className="icon">
-                                                <img src={idx.img} alt="Cyfonii" />
-                                                    
-                                            </div>
-                                            <div className="content">
-                                                <h5 className="title">{idx.title}</h5>
-                                                <p>{idx.desc}</p>
-                                            </div>
-                                        </div>
-                                    ))
-                                }
-                                
-                            </div>
-                        </div>
-
-
-
-                        <div className="col-xl-6 col-md-6">
-                            <div className="portfolio__right">
-                                <div className="image" data-aos="fade-left" data-aos-duration="2000">
-                                    <img src={img} alt="cyfonii" />
+                    </div>
+                    
+                    <div className="col-xl-6 col-md-6 d-flex flex-column align-items-center"> {/* Cambiado a col-4 y aplicado estilos para centrar */}
+                        <div className="portfolio__left">
+                            {data.map((idx) => (
+                                <div key={idx.id} className="portfolio-box">
+                                    <div className="icon">
+                                        <img src={idx.img} alt="Cyfonii" />
+                                    </div>
+                                    <div className="content">
+                                        <a href="/about" className="tf-button">{idx.title}</a>
+                                    </div>
                                 </div>
+                            ))}
+                        </div>
+                        <div className="d-flex justify-content-center"> {/* Centrado del botón */}
+                            <Button link="#" title="Ver más" />
+                        </div>
+                    </div>
+
+
+                    
+
+
+                    <div className="col-xl-6 col-md-6">
+                        <div className="portfolio__right">
+                            <div className="image" data-aos="fade-left" data-aos-duration="2000">
+                                <img src={img} alt="cyfonii" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     );
 }
 

@@ -1,12 +1,12 @@
 const menus = [
     {
         id: 1,
-        name: 'Home',
+        name: 'Inicio',
         links: '#',
         namesub: [
             {
                 id: 1,
-                sub: 'Home 01',
+                sub: 'Inicio 1',
                 links: '/'
             },
             {

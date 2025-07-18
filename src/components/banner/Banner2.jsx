@@ -21,9 +21,9 @@ function Banner2(props) {
 
     const [dataBlock] = useState(
         {
-            subheading: 'We are Monteno NFT',
-            heading: 'Most Popular Collections',
-            desc:'Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself'
+            subheading: 'TESEO DATA LAB',
+            heading: 'Soluciones inteligentes con IA para industrias especializadas',
+            desc:'Análisis econométrico, automatización y tecnología a medida para transformar datos en decisiones rentables. Somos el socio estratégico de empresas que apuestan por el futuro.'
         }
     )
     return (

@@ -5,7 +5,7 @@ import dataPortfolio from '../assets/fake-data/data-portfolio';
 import dataRoadMap from '../assets/fake-data/data-roadmap';
 import dataTestimonials from '../assets/fake-data/data-testimonials';
 import dataProject from '../assets/fake-data/dataProject';
-import dataTeam from '../assets/fake-data/dataTeam';
+//import dataTeam from '../assets/fake-data/dataTeam';
 import About from '../components/about/About';
 import Banner from '../components/banner/Banner';
 import Create from '../components/create/Create';
@@ -17,6 +17,7 @@ import Roadmap from '../components/roadmap/Roadmap';
 import Speciality from '../components/speciality/Speciality';
 import Team from '../components/team/Team';
 import Testimonials from '../components/testimonials/Testimonials';
+import dataResult from '../assets/fake-data/Resultados';
 
 
 
@@ -37,7 +38,7 @@ function Home01(props) {
            
             <Roadmap  data={dataRoadMap} />
 
-            <Team data={dataTeam} />
+            <Team data={dataResult} />
 
             <Testimonials data={dataTestimonials} />
 

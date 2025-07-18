@@ -1,12 +1,14 @@
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
 
+import { Navigation , Pagination   } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
+
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import Partner from '../partner/Partner';
+import { Link } from 'react-router-dom';
 
 Team.propTypes = {
     data: PropTypes.array
@@ -19,12 +21,13 @@ function Team(props) {
     const [dataBlock] = useState(
         {
             subheading: 'Team Members',
-            heading: 'Our Amazing Team Members',
+            heading: 'Resultados medibles',
         }
     )
 
     return (
         <section className="team">
+            <div className="shape right"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -51,6 +54,11 @@ function Team(props) {
                                     },
                                 }}
                                 loop={true}
+                                modules={[ Navigation , Pagination ]}
+                                navigation
+                                pagination={{
+                                    clickable: true,
+                                  }}
                                 
                             >
 
@@ -70,6 +78,7 @@ function Team(props) {
                                                             {idx.position}
                                                         </p>
 
+                                                        {/*
                                                         <ul className="list-social">
                                                             <li><Link to="#">
                                                                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,6 +96,7 @@ function Team(props) {
                                                                 </svg>
                                                             </Link></li>
                                                         </ul>
+                                                        */}
                                                     </div>
                                                 </div>
                                             </div>

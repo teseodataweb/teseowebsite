@@ -42,10 +42,8 @@ function About(props) {
     const [dataBlock] = useState(
         {
             subheading: 'About us',
-            heading: 'Hight Quality NFT Collections',
-            desc1: 'Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself' ,
-            desc2 :'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat'
-
+            heading: '¿Tu operación genera datos, pero no decisiones?',
+            desc1: 'En sectores como bienes raíces, retail o manufactura, el exceso de datos no es garantía de claridad. Las decisiones lentas, la baja conversión o la falta de segmentación pueden costarte millones. En Teseo, convertimos tus datos en acciones concretas con tecnología y análisis avanzados.' 
         }
     )
     return (
@@ -71,7 +69,7 @@ function About(props) {
                                 <h3 className="heading">{dataBlock.heading}</h3>
                                     <p className="mb-17">{dataBlock.desc1}</p>
                                     <p className="mb-26">{dataBlock.desc2}</p>
-                                    <Button link='/about' title='More About Us' />
+                                    <Button link='/about' title='Diagnóstico gratis' />
                             </div>
                         </div>
                     </div>

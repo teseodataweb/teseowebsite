@@ -11,26 +11,27 @@ const dataPortfolio = [
     {
         id: 1,
         img: img1,
-        title: 'Connect your wallet',
-        desc: 'Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos'
+        title: 'Bienes raíces',
     },
     {
         id: 2,
         img: img2,
-        title: 'Buy your NFT',
-        desc: 'Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos'
+        title: 'Manufactura ',
     },
     {
         id: 3,
         img: img3,
-        title: 'Create collection',
-        desc: 'Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos'
+        title: 'Retail & consumo',
     },
     {
         id: 4,
         img: img4,
-        title: 'Sell your NFT',
-        desc: 'Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos'
+        title: 'Restaurantes',
+    },
+    {
+        id: 5,
+        img: img4,
+        title: 'Concretos',
     },
 
 

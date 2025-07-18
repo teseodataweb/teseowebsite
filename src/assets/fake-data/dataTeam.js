@@ -13,30 +13,30 @@ const dataTeam = [
     {
         id: 1,
         img: img1,
-        name: 'Jane Cooper',
-        position: 'Founder & CEO'
+        name: 'Homia (Nayarit)',
+        position: '10% tiempo de venta'
     },
     {
         id: 2,
         img: img2,
-        name: 'Jenny Wilson',
-        position: 'Designer'
+        name: 'Le Curve',
+        position: '+2.4 % ROI, +$19.4M de retorno'
     },
 
     {
         id: 3,
         img: img3,
-        name: 'Ralph Edwards',
-        position: 'Developer'
+        name: 'Cayco',
+        position: ' –40 % CAC, +20 % plusvalía anual'
     },
 
     {
         id: 4,
         img: img4,
-        name: 'Cody Fisher',
-        position: '3D Artist'
+        name: 'Sherwin Williams',
+        position: '+6 % leads calificados, sin subir presupuesto'
     },
-
+    
     {
         id: 5,
         img: img5,
@@ -90,7 +90,7 @@ const dataTeam = [
         name: 'Ralph Edwards',
         position: 'Developer'
     },
-
+    
     
 
 ]

@@ -10,26 +10,30 @@ const dataBox = [
     {
         id: 1,
         img: img1,
-        title: 'Huge Collection',
-        desc: 'Oficia dese runt mollit anim id est labo met, consectetur adipis'
+        title: 'Análisis Estratégico',
+        desc: 'Estudios financieros, econométricos y de mercado para evaluar oportunidades y minimizar riesgos.',
+        btn: 'Ver más'
     },
     {
         id: 2,
         img: img2,
-        title: 'High Quality',
-        desc: 'Oficia dese runt mollit anim id est labo met, consectetur adipis'
+        title: 'Optimización Comercial',
+        desc: 'Diseño de producto, precios dinámicos y ventas basadas en datos reales.',
+        btn: 'Optimizar venta'
     },
     {
         id: 3,
         img: img3,
-        title: 'Top Resource',
-        desc: 'Oficia dese runt mollit anim id est labo met, consectetur adipis'
+        title: 'Marketing & Masificación',
+        desc: 'Campañas multicanal, generación de bases de datos, SEO y nurturing con IA.',
+        btn: 'Activar leads'
     },
     {
         id: 4,
         img: img4,
-        title: 'Big Community',
-        desc: 'Oficia dese runt mollit anim id est labo met, consectetur adipis'
+        title: 'Soluciones Tecnológicas',
+        desc: 'Dashboards, automatizaciones y desarrollo de software a medida.',
+        btn: 'Ver tecnología'
     },
 
 ]
