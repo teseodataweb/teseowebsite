@@ -6,7 +6,7 @@ import img4 from '../images/svg/icon-4.svg'
 
 
 
-const dataPortfolio = [
+const dataSectorsHome = [
 
     {
         id: 1,
@@ -37,4 +37,4 @@ const dataPortfolio = [
 
 ]
 
-export default dataPortfolio;
+export default dataSectorsHome;

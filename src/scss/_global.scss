@@ -39,11 +39,33 @@ ul, li {
     margin: 0;
     padding: 0;
 }
-p {
-    margin-bottom: 0;
+
+.info-services li, .info-sectors li {
+    list-style-type:disc;
 }
 
-a, button {
+p {
+    margin-top: 0px,
+}
+
+
+.info-services{
+    margin: 25px;
+    text-align: center;
+    //margin-top: 15px;
+}
+
+.info-sectors {
+    margin: 0px 25px;
+    text-align:left;
+}
+
+.info-sectors p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+a {
     font-family: 'Conthrax', sans-serif;
     font-size: 15px;
     text-decoration: none;
@@ -57,6 +79,8 @@ a, button {
         color: var(--primary-color);
     }
 }
+
+
 .boild {
     font-weight: 700;
 }
@@ -342,6 +366,7 @@ h6,
 .line-h17 {
     line-height: 1.7;
 }
+
 .container {
     max-width: 1140px;
     width: 100%;
@@ -377,6 +402,7 @@ h6,
 
 .center {
     text-align: center;
+    
 }
 
 .bg-1 {

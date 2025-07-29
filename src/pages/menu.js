@@ -2,28 +2,16 @@ const menus = [
     {
         id: 1,
         name: 'Inicio',
-        links: '#',
-        namesub: [
-            {
-                id: 1,
-                sub: 'Inicio 1',
-                links: '/'
-            },
-            {
-                id: 2,
-                sub: 'Home 02',
-                links: '/home-v2'
-            },
-            {
-                id: 3,
-                sub: 'Home 03',
-                links: '/home-v3'
-            },
-
-        ]
+        links: '/'
     },
     {
         id: 2,
+        name: 'Services',
+        links: '/Services',
+    },
+    /*
+    {
+        id: 3,
         name: 'Explore',
         links: '#',
         namesub: [
@@ -69,6 +57,7 @@ const menus = [
             },
         ]
     },
+    
     {
         id: 4,
         name: 'About',
@@ -93,7 +82,7 @@ const menus = [
         links: '/contact',
     },
 
-    
+    */
 ]
 
 export default menus;

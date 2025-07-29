@@ -5,7 +5,7 @@ import img3 from '../images/icon/icon3.png'
 import img4 from '../images/icon/icon4.png'
 
 
-const dataBox = [
+const dataServicesHome = [
 
     {
         id: 1,
@@ -38,4 +38,4 @@ const dataBox = [
 
 ]
 
-export default dataBox;
+export default dataServicesHome;

@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 //import Button from '../button/Button';
 
 
-function Speciality(props) {
+function ServicesHome(props) {
 
     const { data } = props;
 
     const [dataBlock] = useState(
         {
-            subheading: 'Our Speciality',
+            //subheading: 'Our Speciality',
             heading: 'Un enfoque integral, de la estrategia al resultado',
         }
     )
     return (
-        <section className="speciality">
+        <section className="servicesHome">
             <div className="shape right"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className="block-text center">
-                            <h6 className="sub-heading"><span>{dataBlock.subheading}</span></h6>
+                            {/*<h6 className="sub-heading"><span>{dataBlock.subheading}</span></h6>*/}
                             <h3 className="heading pd">{dataBlock.heading}</h3>
                             <p className="">{dataBlock.desc}</p>
                         </div>
@@ -27,7 +27,7 @@ function Speciality(props) {
                     {
                         data.map(idx => (
                             <div key={idx.id} className="col-xl-3 col-md-6">
-                                <div className="speciality-box" >
+                                <div className="servicesHome-box" >
                                     <div className="icon">
                                         <img src={idx.img} alt="Cyfonii" />
                                     </div>
@@ -51,4 +51,4 @@ function Speciality(props) {
     );
 }
 
-export default Speciality;
+export default ServicesHome;

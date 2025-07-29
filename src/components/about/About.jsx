@@ -41,7 +41,7 @@ function About(props) {
 
     const [dataBlock] = useState(
         {
-            subheading: 'About us',
+            //subheading: 'About us',
             heading: '¿Tu operación genera datos, pero no decisiones?',
             desc1: 'En sectores como bienes raíces, retail o manufactura, el exceso de datos no es garantía de claridad. Las decisiones lentas, la baja conversión o la falta de segmentación pueden costarte millones. En Teseo, convertimos tus datos en acciones concretas con tecnología y análisis avanzados.' 
         }
@@ -65,7 +65,7 @@ function About(props) {
                         </div>
                         <div className="col-xl-6 col-md-12">
                             <div className="block-text" >
-                                <h6 className="sub-heading"><span>{dataBlock.subheading}</span></h6>
+                                {/*<h6 className="sub-heading"><span>{dataBlock.subheading}</span></h6>*/}
                                 <h3 className="heading">{dataBlock.heading}</h3>
                                     <p className="mb-17">{dataBlock.desc1}</p>
                                     <p className="mb-26">{dataBlock.desc2}</p>

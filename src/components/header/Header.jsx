@@ -1,9 +1,9 @@
-import React , { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { Link , NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import menus from '../../pages/menu';
 
-import logo from '../../assets/images/logo/logo.png'
+import logo from '../../assets/images/logo/logo-blanco.png'
 
 import './styles.scss';
 
@@ -15,7 +15,7 @@ import './styles.scss';
 const Header = () => {
 
     const [scroll, setScroll] = useState(false);
-        useEffect(() => {
+    useEffect(() => {
         window.addEventListener("scroll", () => {
             setScroll(window.scrollY > 300);
         });
@@ -28,12 +28,12 @@ const Header = () => {
 
     const handleMenuActive = () => {
         setMenuActive(!menuActive);
-      };
+    };
 
-    
+
     const [activeIndex, setActiveIndex] = useState(null);
     const handleDropdown = index => {
-        setActiveIndex(index); 
+        setActiveIndex(index);
     };
 
     return (
@@ -44,17 +44,17 @@ const Header = () => {
                         <div className="header__body">
                             <div className="header__logo">
                                 <Link to="/">
-                                    <img id="site-logo" src={logo} alt='cyfonii' />
+                                    <img className="site-logo" src={logo} alt="Teseo Data Lab" />
                                 </Link>
                             </div>
 
                             <div className="header__right">
-                            <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
+                                <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
                                     <ul id="menu-primary-menu" className="menu">
                                         {
-                                            menus.map((data,idx) => (
-                                                <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`} 
-                                                
+                                            menus.map((data, idx) => (
+                                                <li key={idx} onClick={() => handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`}
+
                                                 >
                                                     <Link to={data.links}>{data.name}</Link>
                                                     {
@@ -67,7 +67,7 @@ const Header = () => {
                                                             }
                                                         </ul>
                                                     }
-                                                    
+
                                                 </li>
                                             ))
                                         }
@@ -79,9 +79,9 @@ const Header = () => {
                             <div className="header__action">
                                 <Link to="#" className="search-btn">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="9.7659" cy="9.76639" r="8.98856" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                                        <path d="M16.0176 16.4849L19.5416 19.9997" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>                                    
+                                        <circle cx="9.7659" cy="9.76639" r="8.98856" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M16.0176 16.4849L19.5416 19.9997" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
                                 </Link>
                                 <Link to="/contact" className="action-btn"><span>Join Now</span></Link>
                             </div>
@@ -104,14 +104,14 @@ const Header = () => {
         //                                 </Link>
         //                             </div>
         //                         </div>
-                                
+
         //                        <div className="header-center">
         //                         <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
         //                             <ul id="menu-primary-menu" className="menu">
         //                                 {
         //                                     menus.map((data,idx) => (
         //                                         <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`} 
-                                                
+
         //                                         >
         //                                             <Link to={data.links}>{data.name}</Link>
         //                                             {
@@ -124,7 +124,7 @@ const Header = () => {
         //                                                     }
         //                                                 </ul>
         //                                             }
-                                                    
+
         //                                         </li>
         //                                     ))
         //                                 }
@@ -133,7 +133,7 @@ const Header = () => {
         //                        </div>
 
         //                         <div className="header-right">
-                                   
+
         //                             <DarkMode />
 
         //                             <Link to="/contact" className="tf-button discord"><i className="icon-fl-vt"></i><span>DISCORD</span></Link>
@@ -141,14 +141,14 @@ const Header = () => {
         //                             <div className={`mobile-button ${menuActive ? 'active' : ''}`} onClick={handleMenuActive}><span></span></div>
         //                         </div>  
 
-                                
+
         //                     </div>
         //                 </div>
         //             </div>
         //         </div>
-                
+
         //     </header>
-       
+
     );
 }
 

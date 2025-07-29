@@ -5,7 +5,7 @@ import img2 from '../../assets/images/icon/icon-01.png'
 import img3 from '../../assets/images/layouts/avt-01.png'
 
 
-function Banner(props) {
+function Hero(props) {
     return (
         <section className="banner">
             <div className="shape right"></div>
@@ -73,4 +73,4 @@ function Banner(props) {
     );
 }
 
-export default Banner;
+export default Hero;
