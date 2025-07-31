@@ -10,13 +10,13 @@ function Create(props) {
     
     const [dataBlock] = useState(
         {
-            heading: 'Create your NFT portfolio',
-            desc: 'Get udpated with news, tips & tricks',
+            heading: '¿Y si pudieras priorizar a los prospectos con mayor potencial?',
+            desc: 'Activa tu Agente Vertical: una IA que segmenta, califica y organiza tu base de datos para que tu equipo enfoque esfuerzos donde hay más oportunidad.',
             
         }
     )
     return (
-        <section className="create">
+        <section className="createPortfolio">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -24,7 +24,7 @@ function Create(props) {
                                 <div className="content">
                                     <h4 className="heading">{dataBlock.heading}</h4>
                                     <p>{dataBlock.desc}</p>
-                                    <Button title='Join Now' link='/contact' />
+                                    <Button title="Activar Agente IA" link="/contact" className="action-btn" />
                                 
                                 </div>
                                 <img src={img} alt="Cyfonii" />
