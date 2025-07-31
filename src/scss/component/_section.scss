@@ -843,57 +843,57 @@
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease-out;
-  
+
     .cta-title,
     .cta-text,
     .cta-btn {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-out;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
     }
-  
+
     &.in-view {
-      opacity: 1;
-      transform: translateY(0);
-      transition: all 0.8s ease-out;
-  
-      .cta-title {
         opacity: 1;
         transform: translateY(0);
-        transition-delay: 0.2s;
-      }
-  
-      .cta-text {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0.4s;
-      }
-  
-      .action-btn {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0.6s;
-      }
+        transition: all 0.8s ease-out;
+
+        .cta-title {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.2s;
+        }
+
+        .cta-text {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.4s;
+        }
+
+        .action-btn {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.6s;
+        }
     }
-  
+
     .cta-title {
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
     }
-  
+
     .cta-text {
-      font-size: 16px;
-      font-weight: 300;
-      margin-bottom: 40px;
-      color: #fff;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        color: #fff;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
-  
+}
+
 
 
 /* FIN CTA SERVICES*/
@@ -1176,7 +1176,7 @@
     }
 }
 
-/* Styles Product Demo */
+/* Fin Styles Product Demo */
 
 .project-box {
     background: linear-gradient(89.96deg, rgba(255, 255, 255, 0.05) 0.03%, rgba(255, 255, 255, 0.008) 49.67%, rgba(255, 255, 255, 0.05) 99.96%);
@@ -3875,3 +3875,524 @@ section.touch {
 .bannerSwiper {
     position: relative;
 }
+
+
+/*********************** Estilos Sección /portfolio ***********************/
+/*** Componente 'Hero' ***/
+
+.portfolio-hero-section {
+    padding: 130px 0 100px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    .heading {
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 700;
+        transition: all 0.5s ease-in-out;
+
+        @include mobile {
+            font-size: 36px;
+        }
+    }
+
+    .gradient-text {
+        background: linear-gradient(90deg, #DEC7FF, var(--primary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    .desc {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #ffffff;
+        opacity: 0.9;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .shape {
+        animation: animate-3 12s ease-in-out infinite;
+        opacity: 0.3;
+    }
+}
+
+
+/*** Fin Componente 'Hero' ***/
+
+
+/*** Estilos Componente 'CTA' ***/
+
+.portfolio-cta-section {
+    padding: 100px 0;
+    position: relative;
+    background: linear-gradient(145deg, #130F40, #070A29);
+    text-align: center;
+
+    .heading {
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.6;
+        max-width: 850px;
+        margin: 0 auto;
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    /*
+    .action-btn {
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 30px rgba(92, 39, 254, 0.5);
+      }
+    }
+    */
+
+    // Opcional: animación de fondo sutil
+    &::before {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: radial-gradient(circle, #5C27FE55 0%, transparent 80%);
+        filter: blur(150px);
+        opacity: 0.4;
+        z-index: 0;
+        animation: animate-3 18s ease-in-out infinite;
+    }
+
+    .cta-block {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
+/*** Fin Estilos Componente 'CTA' ***/
+
+
+
+/*** Estilos Componente 'SuccessCases' ***/
+
+.portfolio-success-section {
+    padding: 130px 0 100px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* === FILTROS === */
+.filtros-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: -2rem;
+}
+
+.filtro-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpFilters 0.6s ease forwards;
+    transition: all 0.3s ease;
+}
+
+.filtros-categorias .filtro-btn {
+    animation-delay: var(--delay, 0s);
+}
+
+.filtro-btn.activo,
+.filtro-btn:hover {
+    background: #9F5FFF;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(159, 95, 255, 0.3);
+}
+
+/* === GRID DE CASOS === */
+.casos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Card wrapper animación de entrada */
+.card-wrapper {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.card-wrapper.fade-in-up-strong {
+    animation: fadeInUpStrong 0.8s ease-out forwards;
+}
+
+/* === TARJETAS === */
+.card-categoria.glass-effect {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform, box-shadow;
+}
+
+.card-categoria.glass-effect:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.badge-categoria.destacado {
+    background: #9F5FFF;
+    color: white;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+    box-shadow: 0 0 10px rgba(159, 95, 255, 0.4);
+}
+
+.categoria-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.categoria-desc {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.impacto-lista {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.impacto-lista li {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.categoria-link.destacado {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #DEC7FF;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.categoria-link.destacado:hover {
+    border-bottom: 2px solid #9F5FFF;
+    color: #9F5FFF;
+    transform: translateX(2px);
+}
+
+/* === TARJETA DESTACADA TESEO === */
+.card-categoria.card-teseo {
+    background: linear-gradient(5deg,
+            rgba(136, 68, 231, 0.732),
+            rgba(22, 2, 51, 0.341)) !important;
+    backdrop-filter: blur(14px);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(255, 108, 195, 0.2);
+}
+
+.card-categoria.card-teseo:hover {
+    border-color: #ff6cc3;
+    box-shadow: 0 16px 40px rgba(255, 108, 195, 0.4);
+    transform: translateY(-22px) scale(1.03);
+}
+
+
+.badge-categoria.destacado-teseo {
+    background: linear-gradient(135deg, #a559ff, #ff6cc3);
+    color: white;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+    box-shadow: 0 0 15px rgba(255, 108, 195, 0.5);
+    animation: pulseBadge 2.2s infinite ease-in-out;
+}
+
+.card-teseo .categoria-link.destacado {
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.card-teseo .categoria-link.destacado:hover {
+    border-bottom: 2px solid #ff6cc3;
+    color: #ff6cc3;
+}
+
+/* === ANIMACIONES === */
+@keyframes fadeInUpStrong {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBasic {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUpFilters {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseBadge {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 108, 195, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(255, 108, 195, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 108, 195, 0.3);
+    }
+}
+
+.fade-in-up-strong {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeInUpStrong 0.8s ease-out forwards;
+}
+
+.fade-in-basic {
+    opacity: 0;
+    animation: fadeInBasic 1s ease-out forwards;
+}
+
+.portfolio-animate {
+    opacity: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .casos-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .card-categoria.glass-effect {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .filtro-btn {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+
+    .badge-categoria.destacado {
+        font-size: 16px;
+        //padding: 5px 12px;
+        padding: 9.6px 16px;
+    }
+
+    .categoria-title {
+        font-size: 18px;
+    }
+
+    .categoria-desc,
+    .impacto-lista li {
+        font-size: 14px;
+    }
+}
+
+/* === TABLET (iPad vertical y horizontal) === */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .casos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .card-categoria.glass-effect {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .filtro-btn {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+
+    .badge-categoria.destacado,
+    .badge-categoria.destacado-teseo {
+        font-size: 15px;
+        padding: 9px 16px;
+    }
+
+    .categoria-title {
+        font-size: 20px;
+    }
+
+    .categoria-desc,
+    .impacto-lista li {
+        font-size: 15px;
+    }
+
+    .categoria-link.destacado {
+        font-size: 15px;
+    }
+}
+
+/*** Fin Estilos Componente 'SuccessCases' ***/
+
+
+
+
+/*** Estilos Componente 'PortfolioCTAEnd' ***/
+
+.portfolio-cta-end-section {
+    padding: 130px 0 100px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    background: transparent;
+  
+}
+
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 1024px) {
+    .portfolio-cta-end-section {
+      .block-text {
+        .heading {
+          font-size: 2rem;
+        }
+  
+        .desc {
+          font-size: 1rem;
+        }
+  
+        .action-btn.tf-button {
+          padding: 0.75rem 1.75rem;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-cta-end-section {
+      padding: 100px 1rem 80px;
+  
+      .block-text {
+        .heading {
+          font-size: 1.75rem;
+          line-height: 1.4;
+        }
+  
+        .desc {
+          font-size: 0.95rem;
+        }
+  
+        .action-btn.tf-button {
+          padding: 0.7rem 1.5rem;
+          font-size: 0.9rem;
+        }
+      }
+  
+      .shape.right {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-cta-end-section {
+      .block-text {
+        .heading {
+          font-size: 1.5rem;
+        }
+  
+        .desc {
+          font-size: 0.9rem;
+        }
+  
+        .action-btn.tf-button {
+          font-size: 0.85rem;
+          padding: 0.65rem 1.4rem;
+        }
+      }
+    }
+  }
+
+  
+
+  
+
+/*** Fin Estilos Componente 'PortfolioCTAEnd' ***/
+
+
+
+
+
+
+
+
+/*********************** Fin Estilos Sección /portfolio ***********************/
